@@ -130,7 +130,7 @@ body{background:#fff; font:500 16px/26px "Manrope", sans-serif; color:#303050;}
 .priceBox h2{font-size:30px; font-weight:800; color:#002259; padding:10px 0 20px;}
 .priceBox .price{font-size:40px; font-weight:800; color:#23bbe8;}
 .priceBox .price span{display:block; color:#002259; font-size:14px; font-weight:500; padding:10px 0;}
-.packageBox p{padding:30px 25px; font-size:14px; color:#727882; line-height:24px; margin:0;}
+.packageBox p{padding:30px 20px; font-size:14px; color:#727882; line-height:24px; margin:0;}
 .packageBox .title{background:#f1f9fb; padding:20px 25px 20px 60px; font-size:16px; font-weight:500; color:#002259; position:relative; margin:0;}
 .packageBox .title i{position:absolute; right:20px; top:15px; font-size:16px; color:#45c5eb; border:2px solid #45c5eb; border-radius:100px; width:30px; height:30px; line-height:25px; display:block; text-align:center;}
 .packageBox .title::before{content:""; position:absolute; left:25px; top:15px; display:block; width:25px; height:26px; display:block;}
@@ -138,12 +138,12 @@ body{background:#fff; font:500 16px/26px "Manrope", sans-serif; color:#303050;}
 .packageBox .webServer::before{background:url(../images/web-server-icon.png) no-repeat 0 0;}
 .packageBox .e-mail::before{background:url(../images/mail-icon.png) no-repeat 0 0;}
 .priceTbl td{padding:8px 0px; font-size:13px; line-height:18px; color:#5b5b5b; font-weight:400; position:relative; vertical-align:middle;}
-.priceTbl td span{position:absolute; right:30px; width:100%;white-space: nowrap; top:8px; display:block; }
+.priceTbl td span{position:absolute; right:23px; width:100%;white-space: nowrap; top:8px; display:block; }
 .priceTbl{margin:20px 0;}
 .priceTbl td img{margin-right:3px;}
 .priceTbl td strong{color:#23bbe8; font-weight:600;}
-.priceTbl tr td:last-child{text-align:right; padding-right:25px;}
-.priceTbl tr td:first-child{padding-left:25px;}
+.priceTbl tr td:last-child{text-align:right; padding-right:20px;}
+.priceTbl tr td:first-child{padding-left:20px;}
 .value{background:#002259; font-size:14px; font-weight:500px; padding:7px 5px; color:#fff; letter-spacing:5px; text-align:center; text-transform:uppercase; margin-top:-38px;}
 .planRow{padding-top:100px;}
 .planRow h2{position:relative; padding-left:130px; text-align:left; padding-bottom:10px;}
