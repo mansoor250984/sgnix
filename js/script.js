@@ -9,6 +9,17 @@ $(".navigation-menu .fa-times").click(function(){
 	$('body').css('overflow-y', 'visible');
 });
 
+//$(".accordion .title").click(function(){
+    //$(".accordion .priceTbl").slideToggle(200);
+//});
+
+$(".accordion .title").click( function ( e ){ 
+   e.preventDefault()
+   $( this ).parent().find( ".priceTbl" ).slideToggle(200);
+   $( this ).parent().find( ".title" ).toggleClass('rotate');
+});
+
+
 
 
 

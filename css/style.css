@@ -123,7 +123,8 @@ body{background:#fff; font:500 16px/26px "Manrope", sans-serif; color:#303050;}
 .hostingSer .col-lg-4:nth-child(4), .hostingSer .col-lg-4:nth-child(5), .hostingSer .col-lg-4:nth-child(6){border-bottom:0;}
 .patternSec h3{font-size:20px; font-weight:500; color:#404040; margin:-15px 0 50px;}
 .priceSec{background:url(../images/patternbg.jpg) no-repeat center top; padding:180px 0 110px; margin-top:-80px;}
-.packageBox{background:#fff; box-shadow:rgba(0,0,0,.2) 0px 0px 20px; padding-bottom:20px;}
+.packageBox{background:#fff; box-shadow:rgba(0,0,0,.2) 0px 0px 20px; padding-bottom:0px;}
+.accordion{overflow:hidden;}
 .priceBox{text-align:center; padding:40px 20px;}
 .beginner{background:#fff url(../images/whitebg.png) no-repeat center top;background-size:cover;}
 .ultimate{background:url(../images/bluebg.jpg) no-repeat center top; background-size:cover;}
@@ -131,20 +132,21 @@ body{background:#fff; font:500 16px/26px "Manrope", sans-serif; color:#303050;}
 .priceBox .price{font-size:40px; font-weight:800; color:#23bbe8;}
 .priceBox .price span{display:block; color:#002259; font-size:14px; font-weight:500; padding:10px 0;}
 .packageBox p{padding:30px 20px; font-size:14px; color:#727882; line-height:24px; margin:0;}
-.packageBox .title{background:#f1f9fb; padding:20px 25px 20px 60px; font-size:16px; font-weight:500; color:#002259; position:relative; margin:0;}
-.packageBox .title i{position:absolute; right:15px; top:15px; font-size:16px; color:#45c5eb; border:2px solid #45c5eb; border-radius:100px; width:30px; height:30px; line-height:25px; display:block; text-align:center;}
+.packageBox .title{background:#f1f9fb; padding:20px 25px 20px 60px; font-size:16px; font-weight:500; color:#002259; position:relative; margin:2px 0 0 0; cursor:pointer;}
+.rotate i.fa{transform: rotate(180deg);}
+.packageBox .title i{position:absolute; right:15px; top:15px; font-size:16px; color:#45c5eb; border:2px solid #45c5eb; border-radius:100px; width:30px; height:30px; line-height:25px; display:block; text-align:center; transition:all 0.3s ease-out 0s;}
 .packageBox .title::before{content:""; position:absolute; left:20px; top:15px; display:block; width:25px; height:26px; display:block;}
 .packageBox .package::before{background:url(../images/package-icon.png) no-repeat 0 0;}
 .packageBox .webServer::before{background:url(../images/web-server-icon.png) no-repeat 0 0;}
 .packageBox .e-mail::before{background:url(../images/mail-icon.png) no-repeat 0 0;}
 .priceTbl td{padding:8px 0px; font-size:13px; line-height:18px; color:#5b5b5b; font-weight:400; position:relative; vertical-align:middle;}
-.priceTbl td span{position:absolute; right:23px; width:100%;white-space: nowrap; top:8px; display:block; }
+.priceTbl td span{position:absolute; right:20px; white-space: nowrap; top:8px; display:block; }
 .priceTbl{margin:20px 0;}
 .priceTbl td img{margin-right:3px;}
 .priceTbl td strong{color:#23bbe8; font-weight:600;}
 .priceTbl tr td:last-child{text-align:right; padding-right:20px;}
 .priceTbl tr td:first-child{padding-left:20px;}
-.value{background:#002259; font-size:14px; font-weight:500px; padding:7px 5px; color:#fff; letter-spacing:5px; text-align:center; text-transform:uppercase; margin-top:-38px;}
+.value{background:#002259; font-size:14px; font-weight:500px; padding:7px 5px; color:#fff; letter-spacing:5px; text-align:center; text-transform:uppercase; margin-top:-40px;}
 .planRow{padding-top:100px;}
 .planRow h2{position:relative; padding-left:130px; text-align:left; padding-bottom:10px;}
 .planRow h2::before{content:""; position:absolute; left:0; top:-20px; display:block; background:url(../images/plan-icon.png) no-repeat; width:113px; height:113px;}
@@ -188,8 +190,8 @@ body{background:#fff; font:500 16px/26px "Manrope", sans-serif; color:#303050;}
 }
 
 @media only screen and (max-width: 991px) {
-.hero{text-align:center; position:relative;}
-.hero::after{content:""; position:absolute; width:100%; height:100%; display:block; background:rgba(255,255,255,.5); left:0; top:0; z-index:0;}
+.hero{text-align:center; position:relative; background-image:url(../images/hero-mobile.jpg); min-height:842px;}
+/*.hero::after{content:""; position:absolute; width:100%; height:100%; display:block; background:rgba(255,255,255,.5); left:0; top:0; z-index:0;}*/
 .hero .container{z-index:1; position:relative;}
 .featureSec::before{display:none;}
 .footer::before{background-size:100%; background-position:center bottom}
@@ -204,8 +206,15 @@ body{background:#fff; font:500 16px/26px "Manrope", sans-serif; color:#303050;}
 .hostingSer .col-lg-4{border-left:0!important; border-bottom:1px solid #334c74!important;}
 .hostingSer .col-lg-4:last-child{border-bottom:0!important;}
 .hostingSer .row.padT7.marT7{padding-top:0px; margin:0;}
+.domain-search{padding-top:370px; }
+.hero::after{content:""; position:absolute; width:300px; height:384px; display:block; background:url(../images/robot-webhosting.png) no-repeat 0 0; left:0; top:20%; z-index:0;}
 }
-
+@media only screen and (max-width: 880px) {
+.domain-search{padding-top:280px; }
+}
+@media only screen and (max-width: 800px) {
+.hero::after{width:300px; height:324px ;top:20%; background-size:auto 100%;}
+}
 @media only screen and (max-width: 700px) {
 .plan ul li{padding:10px 20px;}
 .serviceRow .serviceBox{max-width:100%; margin-left:0; margin-right:0;}
@@ -233,22 +242,25 @@ body{background:#fff; font:500 16px/26px "Manrope", sans-serif; color:#303050;}
 .outer{padding:0 0;}
 #big.owl-theme .owl-next, #big.owl-theme .owl-prev{width:25px; background-size:cover; height:61px;}
 .host-cover{padding:40px 0px 20px}
+.hero h1{font-size:40px; line-height:50px;} 
 }
 
 @media only screen and (max-width: 500px) {
-.domain-search{padding-top:450px;}
+.domain-search{padding-top:330px;}
 .searchBox .btn{min-width:120px;}
 .hero{background-position:center bottom;}
 .gurantee{padding:40px 20px;}
 .hero h1{font-size:40px; line-height:50px;}
-.packageBox{margin:10px 10px;}
+.packageBox{margin:10px 0px;}
 .priceSec{padding:110px 0 50px;}
 .testimonialSec{padding-bottom:30px;}
+.hero h1{font-size:32px; line-height:42px; padding-top:10px;} 
+.domain-search h4{padding-bottom:20px;}
+.plan{padding-bottom:50px;}
 }
 
 @media only screen and (max-width: 414px) {
-.plan{padding-bottom:80px;}
-.domain-search{padding-top:400px;}
+
 .serviceRow{padding:30px 15px;}
 .searchBox .btn{min-width:85px; padding:10px;}
 .searchBox .textfld{padding-left:10px;}
@@ -257,4 +269,16 @@ body{background:#fff; font:500 16px/26px "Manrope", sans-serif; color:#303050;}
 .topBar a{padding-right:15px;}
 .innerHero{padding:50px 0; min-height:inherit;}
 .innerHero h1{font-size:36px;}
+.priceTbl td span{right:20px;}
+.domain-search{padding-top:360px;}
+.hero::after{width:300px; height:324px ;top:23%; background-size:auto 100%;}
+}
+@media only screen and (max-width: 375px) {
+.priceTbl td span{right:10px;}
+.priceTbl tr td:first-child{padding-left:10px;}
+.priceTbl tr td:last-child{padding-right:10px;}
+.priceTbl td{font-size:12.5px;}
+.packageBox .title{padding-left:40px; padding-right:10px;}
+.packageBox .title::before{left:10px;}
+.packageBox .title i{right:10px;}
 }
