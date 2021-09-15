@@ -21,6 +21,7 @@
 #thumbs .item span{display:block; width:94px; margin-left:-10px;height:94px; border-radius:100%; overflow:hidden; margin:0 auto; transition:all 0.3s ease-out 0s;}
 #thumbs .current span{transform:scale(1.3);}
 #thumbs .owl-stage-outer{padding:20px 0px 20px 30px; margin-left:-35px;}
+#thumbs .current{z-index:9;}
 
 @media only screen and (max-width: 480px) {
 #thumbs .item span	{width:60px; height:60px;}	
