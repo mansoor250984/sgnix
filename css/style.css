@@ -37,7 +37,7 @@ body{background:#fff; font:500 16px/26px "Manrope", sans-serif; color:#303050;}
 .fa-bars {cursor: pointer;display: none;padding: 10px 12px;}
 .overlay{width:100%; position:fixed;background:rgba(0,0,0,.7); height:100%; right:0px; top:0px; display:none; z-index:1;}
 .nav .fa-times{display:none;}
-.hero{background:url(../images/hero.jpg) no-repeat center top; background-size:cover; min-height:1070px; background-size:cover; padding-top:70px;}
+.hero{background:url(../images/hero-desktop.jpg) no-repeat center top; background-size:100%; min-height:1070px; padding-top:70px;}
 .hero h1, .innerHero h1{font-size:50px; line-height:60px; color:#002259; font-weight:800; padding-top:30px;}
 .hero h2{font-size:16px; color:#404040; text-transform:uppercase; letter-spacing:5px;}
 .hero h2 span{display:inline-block;position:relative;}
@@ -157,6 +157,31 @@ body{background:#fff; font:500 16px/26px "Manrope", sans-serif; color:#303050;}
 .tooltips .tooltiptext::after {content: "";position: absolute;top: 12px;right: 100%;margin-top: -5px;border-width: 5px;border-style: solid;border-color: transparent #002259 transparent transparent;}
 .tooltips:hover .tooltiptext {visibility: visible;}
 
+@media only screen and (max-width: 2500px) {
+.hero{min-height: 1230px;}
+.domain-search{padding-top:650px;}
+}
+@media only screen and (max-width: 1800px) {
+.hero{min-height: 1130px;}
+.domain-search{padding-top:550px;}
+}
+@media only screen and (max-width: 1600px) {
+.hero{min-height: 1080px;}
+.domain-search{padding-top:470px;}
+}
+@media only screen and (max-width: 1450px) {
+.hero{min-height: 980px;}
+.domain-search{padding-top:400px;}
+}
+@media only screen and (max-width: 1250px) {
+.hero{min-height: 900px;}
+.domain-search{padding-top:350px;}
+}
+@media only screen and (max-width: 1100px) {
+.hero{min-height:800px; /*background-image:url(../images/hero-desktop.jpg);*/}
+.domain-search{padding-top:250px;}
+.hero h1{font-size:45px; line-height:55px;}
+}
 @media only screen and (max-width: 1024px) {
 .header{padding-left:20px; padding-right:20px;}
 .menu-bar, .nav .fa-times{display:block; cursor:pointer;}
@@ -195,7 +220,7 @@ body{background:#fff; font:500 16px/26px "Manrope", sans-serif; color:#303050;}
 }
 
 @media only screen and (max-width: 991px) {
-.hero{text-align:center; position:relative; background-image:url(../images/hero-mobile.jpg); min-height:842px;}
+.hero{text-align:center; position:relative; background-image:url(../images/hero-mobile.jpg); min-height:842px; background-size:cover;}
 /*.hero::after{content:""; position:absolute; width:100%; height:100%; display:block; background:rgba(255,255,255,.5); left:0; top:0; z-index:0;}*/
 .hero .container{z-index:1; position:relative;}
 .featureSec::before{display:none;}
