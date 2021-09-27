@@ -114,7 +114,7 @@ body{background:#fff; font:500 16px/26px "Manrope", sans-serif; color:#303050;}
 .testimonial h5{font-size:16px; font-weight:700; color:#002259;}
 .testimonial h6{font-size:14px; font-weight:400; color:#727882;}
 .testimonialSec{padding-bottom:200px;}
-.innerHero{background:url(../images/inner-hero.png) no-repeat center top; min-height:517px; padding:160px 0 50px; position:relative; z-index:1;}
+.innerHero{background:url(../images/inner-hero.png) no-repeat center top; background-size:cover; min-height:517px; padding:160px 0 50px; position:relative; z-index:1;}
 .hostingSer h3{font-size:20px; font-weight:500; color:#fff; padding:20px 0 5px;}
 .hostingSer p{color:rgba(255,255,255,.6);}
 .hostingSer .col-lg-4{border-left:1px solid #334c74; border-bottom:1px solid #334c74;}
@@ -122,7 +122,7 @@ body{background:#fff; font:500 16px/26px "Manrope", sans-serif; color:#303050;}
 .hostingSer .col-lg-4:nth-child(1), .hostingSer .col-lg-4:nth-child(4){border-left:0;}
 .hostingSer .col-lg-4:nth-child(4), .hostingSer .col-lg-4:nth-child(5), .hostingSer .col-lg-4:nth-child(6){border-bottom:0;}
 .patternSec h3{font-size:20px; font-weight:500; color:#404040; margin:-15px 0 50px;}
-.priceSec{background:url(../images/patternbg.jpg) no-repeat center top; padding:180px 0 110px; margin-top:-80px;}
+.priceSec{background:url(../images/patternbg.jpg) repeat-x center top; padding:180px 0 110px; margin-top:-80px;}
 .packageBox{background:#fff; box-shadow:rgba(0,0,0,.2) 0px 0px 20px; padding-bottom:0px;}
 .accordion{overflow:hidden;}
 .priceBox{text-align:center; padding:40px 20px;}
@@ -173,9 +173,17 @@ body{background:#fff; font:500 16px/26px "Manrope", sans-serif; color:#303050;}
 .hero{min-height: 980px;}
 .domain-search{padding-top:400px;}
 }
+@media only screen and (max-width: 1330px) {
+.guranteeRow::after{width: 100px; background-size:100%; right:-68px;}
+}
 @media only screen and (max-width: 1250px) {
 .hero{min-height: 900px;}
 .domain-search{padding-top:350px;}
+}
+@media only screen and (max-width: 1220px) {
+.guranteeRow::after{display:none;}
+#big.owl-theme .owl-prev {left: -50px;}
+#big.owl-theme .owl-next {right: -50px;}
 }
 @media only screen and (max-width: 1100px) {
 .hero{min-height:800px; /*background-image:url(../images/hero-desktop.jpg);*/}
@@ -273,24 +281,41 @@ body{background:#fff; font:500 16px/26px "Manrope", sans-serif; color:#303050;}
 .outer{padding:0 0;}
 #big.owl-theme .owl-next, #big.owl-theme .owl-prev{width:25px; background-size:cover; height:61px;}
 .host-cover{padding:40px 0px 20px}
-.hero h1, .innerHero h1{font-size:40px; line-height:50px;} 
+.hero h1, .innerHero h1{font-size:44px; line-height:50px;} 
+.hero{background:url(../images/hero-mobile-480.jpg) no-repeat center top; background-size:100% auto; padding-bottom:90px;}
+.hero::after{left:25%; top:35%;}
+.domain-search {padding-top: 480px;}
 }
 
 @media only screen and (max-width: 500px) {
 .domain-search{padding-top:330px;}
 .searchBox .btn{min-width:120px;}
-.hero{background-position:center bottom;}
+.hero{background-position:center top; padding-bottom:30px;}
 .gurantee{padding:40px 20px;}
 .packageBox{margin:10px 0px;}
 .priceSec{padding:110px 0 50px;}
 .testimonialSec{padding-bottom:30px;}
-.hero h1, .innerHero h1{font-size:32px; line-height:42px; padding-top:10px;} 
+.hero h1, .innerHero h1{font-size:36px; line-height:42px; padding-top:10px;} 
 .domain-search h4{padding-bottom:20px;}
 .plan{padding-bottom:50px;}
+.hero::after{left:25%; top:28%;}
+.domain-search {padding-top: 420px;}
+.plan ul li {padding: 10px 5px;}
+}
+@media only screen and (max-width: 480px) {
+.hero::after{left:25%; top:25%;}
+.domain-search {padding-top: 370px;}
 }
 
+@media only screen and (max-width: 440px) {
+.hero{min-height:inherit;background-size:100% auto;}
+.domain-search {padding-top: 330px;}
+.plan ul li h3{font-size:17px;}
+.plan ul li span{font-size:15px;}
+.hero::after{left:10%; top:23%;}
+.hero h2 span::after{width:60px; right:-60px;}
+}
 @media only screen and (max-width: 414px) {
-
 .serviceRow{padding:30px 15px;}
 .searchBox .btn{min-width:85px; padding:10px;}
 .searchBox .textfld{padding-left:10px;}
@@ -299,8 +324,17 @@ body{background:#fff; font:500 16px/26px "Manrope", sans-serif; color:#303050;}
 .topBar a{padding-right:15px;}
 .innerHero{padding:80px 0; min-height:inherit; background-position:center bottom;}
 .priceTbl td span{right:20px;}
-.domain-search{padding-top:360px;}
-.hero::after{width:300px; height:324px ;top:23%; background-size:auto 100%;}
+.domain-search{padding-top:330px;}
+.hero::after{width:220px; height:264px ;top:28%; left:20%; background-size:auto 100%;}
+.plan{padding-bottom:20px;}
+.domain-search h4{font-size:18px;}
+.hero h1, .innerHero h1{font-size:30px; line-height:40px;}
+.hero{background-image:url(../images/hero-mobile-360.jpg);}
+}
+
+@media only screen and (max-width: 395px) {
+.hero{background-image:url(../images/hero-mobile-360.jpg);}
+
 }
 @media only screen and (max-width: 375px) {
 .priceTbl td span{right:10px;}
@@ -310,4 +344,6 @@ body{background:#fff; font:500 16px/26px "Manrope", sans-serif; color:#303050;}
 .packageBox .title{padding-left:40px; padding-right:10px;}
 .packageBox .title::before{left:10px;}
 .packageBox .title i{right:10px;}
+.hero::after{top:24%; left:25%;}
+.domain-search{padding-top:290px;}
 }
