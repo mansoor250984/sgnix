@@ -103,7 +103,7 @@ body{background:#fff; font:500 16px/26px "Manrope", sans-serif; color:#303050;}
 .clientSec .col-md-3{border-right:2px solid #fff;}
 .whiteSec{background:#fff; padding:110px 0;}
 .lightgreenSec{background:#f1f9fb; padding:110px 0;}
-.patternSec{background:#c8e8f8 url(../images/transparent-pattern.png) repeat  center top;padding:140px 0 250px; position:relative; margin-top:150px;}
+.patternSec{background:#c8e8f8 url(../images/transparent-pattern.png) repeat center top;padding:140px 0 250px; position:relative; margin-top:150px;}
 .patternSec::before{content:""; display:block; width:100%; background:url(../images/robot-sit.png) no-repeat center top; height:354px; position:absolute; top:-180px;}
 .guranteeRow{position:relative;}
 .guranteeRow::after{display:block; position:absolute; content:""; background:url(../images/robotic.png) no-repeat 0 0; width:180px; height:263px; right:-125px; top:20px;}
