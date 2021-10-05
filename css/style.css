@@ -1,3 +1,5 @@
+
+
 @import url('https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;500;600;700;800&display=swap');
 html, body{height:100%; font-variant-numeric: lining-nums;}
 .clear{clear:both; overflow:hidden;}
@@ -157,10 +159,12 @@ body{background:#fff; font:500 16px/26px "Manrope", sans-serif; color:#303050;}
 .tooltips .tooltiptext::after {content: "";position: absolute;top: 12px;right: 100%;margin-top: -5px;border-width: 5px;border-style: solid;border-color: transparent #002259 transparent transparent;}
 .tooltips:hover .tooltiptext {visibility: visible;}
 
-@media only screen and (max-width: 2500px) {
-.hero{min-height: 1230px;}
+@media only screen and (max-width: 3500px) {
+.hero{min-height: 1230px; background:url(../images/hero-large.jpg) no-repeat center top; background-size:cover;}
 .domain-search{padding-top:650px;}
+.innerHero{background:url(../images/inner-hero-large.png) no-repeat center bottom; background-size:cover;}
 }
+
 @media only screen and (max-width: 1800px) {
 .hero{min-height: 1130px;}
 .domain-search{padding-top:550px;}
@@ -168,6 +172,8 @@ body{background:#fff; font:500 16px/26px "Manrope", sans-serif; color:#303050;}
 @media only screen and (max-width: 1600px) {
 .hero{min-height: 1080px;}
 .domain-search{padding-top:470px;}
+.hero{background:url(../images/hero-desktop.jpg) no-repeat center top; background-size:cover;}
+.innerHero{background:url(../images/inner-hero.png) no-repeat center bottom; background-size:cover;}
 }
 @media only screen and (max-width: 1450px) {
 .hero{min-height: 980px;}
